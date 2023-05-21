@@ -1,0 +1,29 @@
+-> For git in desire folder, open it on CLI and write git init
+-> git status : to check which files are currently committed
+-> git add Chapter1.txt: add chapter1.txt to git
+-> git add . : add all current file of open directory in git
+-> git commit -m "some message": to add commit message for later reminder
+-> git log: to check committed files details. (authr,date,message)
+-> git diff filename.txt : to see different b/w current and previous file
+-> git checkout filen.txt: to roll back to previous committed/git version
+
+-----------------------Push code to Github--------------------------------
+
+First greate repository on github and after givung name to them you will get a link like https://github.com/Ali-Haider-Sherazi/Story_Line.git” then
+ 
+-> git remote add origin https://github.com/Ali-Haider-Sherazi/Story_Line.git: in order to push all committed files to github, can change name of origin to any name. 
+-> git push -u origin master : pushed your committed file to github repository. Where origin is name of remote we gave above and master is name of branch
+
+-> gitignore file make and write name of file that you don’t want to push like scret code etc. So write their name same as they have and then write add . (so add all except the file written in gitignore)
+
+------------------------------Cloning-------------------------------------
+copy the link of github folder/file that you want to clone, then write
+-> git clobe link
+where link is the copied link of folder
+
+-----------------------------Branching and Merging------------------------
+To make experimental work in parallel without destrubing the main work we make branches and after successfull experiment work we much main and experiment work. For that purpose write
+->git branch any-name (branch new name)----(1)
+-> git branch: to see all branches
+-> git checkout any-name (name must be any of one branch name or (1) name): to add new commit in diff branch
+->   
